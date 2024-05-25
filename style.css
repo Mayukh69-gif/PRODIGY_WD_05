@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #348f50, #56b4d3);
+
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container {
+    width: 400px;
+    height: min-content;
+    background-color: white;
+    padding: 30px;
+    border-radius: 7px;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    width: 85%;
+    background-color: rgb(188, 205, 200);
+    padding: 15px 12px;
+    text-transform: capitalize;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.search button {
+    width: 42px;
+    height: 44px;
+    background-color: rgb(188, 205, 200);
+    border: none;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search button:hover {
+    background-color: #1e90ff;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search button img {
+    width: 20px;
+}
+
+.main-content {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 15px;
+}
+
+.main-content img {
+    width: 50%;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 15px;
+    flex-direction: column;
+}
+
+.weather-details .temp {
+    font-weight: 800;
+    font-family: "Roboto", sans-serif;
+    ;
+    font-size: 30px;
+    position: relative;
+}
+
+.weather-details .temp sup {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.weather-details .description {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.additional-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.humidity,
+.wind-speed {
+    display: flex;
+    align-items: center;
+}
+
+.humidity {
+    margin-left: 12px;
+}
+
+.wind-speed {
+    margin-right: 12px;
+}
+
+.humidity .humid {
+    width: 60px;
+}
+
+.wind-speed .wind {
+    width: 58px;
+}
+
+.additional-details .text {
+    margin-left: 5px;
+}
+
+.text span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.error {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.error h1 {
+    font-size: 24px;
+    margin-block-end: 20px;
+}
+
+.error img {
+    width: 60%;
+}

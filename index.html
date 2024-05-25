@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherWise: Your Instant Forecast</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="title">
+        <h1>WeatherWise: Your Instant Forecast</h1>
+      </div>
+      <div class="container">
+        <div class="header">
+          <div class="search">
+            <input type="text" placeholder="Enter Your City" class="input" />
+            <button id="searchBtn">
+              <img src="images/search.png" width="10px" />
+            </button>
+          </div>
+        </div>
+        <div class="error">
+          <h1>Sorry,Location not found.</h1>
+          <img src="images/error.png" alt="" />
+        </div>
+        <div class="main-content">
+          <img src="images/clear.png" class="weather-img" />
+          <div class="weather-details">
+            <p class="temp">0<sup>°C</sup></p>
+            <p class="description">light rain</p>
+          </div>
+          <div class="additional-details">
+            <div class="humidity">
+              <img src="images/humidity.jpg" class="humid" />
+              <div class="text">
+                <span id="humidity">50%</span>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <div class="wind-speed">
+              <img src="images/wind.png" class="wind" />
+              <div class="text">
+                <span id="wind">20 Km/H</span>
+                <p>Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
